@@ -75,7 +75,7 @@ const validateScheme = (req, res, next) => {
 */
 const validateStep = (req, res, next) => {
   const { instructions, step_number } = req.body;
-  const error = { status: 400, message: "vin is missing" };
+  const error = { status: 400, message: "invalid step" };
   if (
     instructions === undefined ||
     typeof instructions !== "string" ||
